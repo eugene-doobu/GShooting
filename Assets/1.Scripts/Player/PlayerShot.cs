@@ -14,8 +14,8 @@ namespace Player
         [SerializeField] private float bulletPower = 1f;
         
         [Header("Bullets Obj")] 
-        [SerializeField] private GameObject bulletObj_A;
-        [SerializeField] private GameObject bulletObj_B;
+        [SerializeField] private GameObject bulletObjA;
+        [SerializeField] private GameObject bulletObjB;
 
         [Header("Shot Offset")] 
         [SerializeField] private float shotOffset2 = 0.3f;
@@ -59,7 +59,7 @@ namespace Player
             if (isBigShot)
             {
                 bullet = Instantiate(
-                    bulletObj_B,
+                    bulletObjB,
                     _tr.position + Vector3.right * shotMargin,
                     _tr.rotation
                 );
@@ -67,7 +67,7 @@ namespace Player
             else
             {
                 bullet = Instantiate(
-                    bulletObj_A,
+                    bulletObjA,
                     _tr.position + Vector3.right * shotMargin + offset,
                     _tr.rotation
                 );
