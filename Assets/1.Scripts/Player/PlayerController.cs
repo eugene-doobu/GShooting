@@ -8,8 +8,8 @@ namespace Player
     {
         
         [Header("Player Parameters")]
-        [SerializeField] float speed = 4f;
-        [SerializeField] float maxHp = 100f;
+        [SerializeField] private float speed = 4f;
+        [SerializeField] private float maxHp = 100f;
 
         private float _currHp = 100f;
     
@@ -28,7 +28,7 @@ namespace Player
         private bool _isTouchLeft = false;
 
         #region Properties
-        public float PlayerHP
+        public float PlayerHp
         {
             get => _currHp;
             set
@@ -82,13 +82,12 @@ namespace Player
         #endregion
     
         #region PrivateFuncs
-        
-        void PlayerHealing()
+        private void PlayerHealing()
         {
         
         }
     
-        void PlayerHurt()
+        private void PlayerHurt()
         {
             // 사망시 처리
             if (_currHp <= 0)
@@ -103,7 +102,7 @@ namespace Player
             _anim.SetTrigger(_hashHurt);
         }
 
-        void PlayerMovement()
+        private void PlayerMovement()
         {
             var h = Input.GetAxisRaw("Horizontal");
             var v = Input.GetAxisRaw("Vertical");
@@ -118,7 +117,7 @@ namespace Player
             _tr.position += nextPos;
         }
 
-        void BorderTouchCheck(string borderName, bool state)
+        private void BorderTouchCheck(string borderName, bool state)
         {
             switch (borderName)
             {
