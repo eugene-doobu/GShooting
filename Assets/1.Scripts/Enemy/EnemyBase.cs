@@ -7,15 +7,15 @@ namespace Enemy
 {
     public class EnemyBase : MonoBehaviour
     {
-        [SerializeField] private float speed;
-        [SerializeField] private int health;
-        [SerializeField] private int score;
+        [SerializeField] protected float speed;
+        [SerializeField] protected int health;
+        [SerializeField] protected int score;
 
-        private Rigidbody2D _rigid;
+        protected Rigidbody2D Rigid;
 
         private void Awake()
         {
-            _rigid = GetComponent<Rigidbody2D>();
+            Rigid = GetComponent<Rigidbody2D>();
         }
 
         private void OnTriggerEnter2D(Collider2D col)

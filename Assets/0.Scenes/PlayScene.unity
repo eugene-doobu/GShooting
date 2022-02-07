@@ -146,6 +146,14 @@ PrefabInstance:
       propertyPath: bulletObj_B
       value: 
       objectReference: {fileID: 3699953910527823581, guid: d51265c5b2776b24185d7abfbd8bd368, type: 3}
+    - target: {fileID: 2609354903437061363, guid: 2bc055ad706e6ea4086305b5338f7a59, type: 3}
+      propertyPath: shotOffset2
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609354903437061363, guid: 2bc055ad706e6ea4086305b5338f7a59, type: 3}
+      propertyPath: shotOffset3
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8234068648962658788, guid: 2bc055ad706e6ea4086305b5338f7a59, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2625,14 +2633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 843137244340826971, guid: 0c9509d50bb50344faee4083232cc8c7, type: 3}
-      propertyPath: m_Size.x
-      value: 0.21712497
-      objectReference: {fileID: 0}
-    - target: {fileID: 843137244340826971, guid: 0c9509d50bb50344faee4083232cc8c7, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0021808892
-      objectReference: {fileID: 0}
     - target: {fileID: 843137244340826974, guid: 0c9509d50bb50344faee4083232cc8c7, type: 3}
       propertyPath: m_Name
       value: uncomfortableFemale
@@ -2693,14 +2693,6 @@ PrefabInstance:
     - target: {fileID: 2205642884787623899, guid: 62fd44ecd54c6084097ec006d573772f, type: 3}
       propertyPath: m_Name
       value: uncomfortableMal
-      objectReference: {fileID: 0}
-    - target: {fileID: 2205642884787623902, guid: 62fd44ecd54c6084097ec006d573772f, type: 3}
-      propertyPath: m_Size.x
-      value: 0.22584847
-      objectReference: {fileID: 0}
-    - target: {fileID: 2205642884787623902, guid: 62fd44ecd54c6084097ec006d573772f, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.037075773
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62fd44ecd54c6084097ec006d573772f, type: 3}
